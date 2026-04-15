@@ -3,7 +3,7 @@ from transformers import pipeline
 
 # Load the summarization model
 @st.cache_resource
-def load_summarize();
+def load_summarize():
     return pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 summarizer = load_summarize()
